@@ -11,7 +11,7 @@ cp user.service /etc/systemd/system/user.service
 cd /app
 npm install
 yum install mongodb-org-shell -y
-mongo --host mangodb.ddevops.online </app/schema/user.js
+mongo --host mongodb.ddevops.online </app/schema/user.js
 systemctl daemon-reload
 systemctl enable user
 systemctl restart user
